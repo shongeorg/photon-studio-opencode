@@ -2,7 +2,7 @@
 """Рендерить PSD-макет у PNG-прев'ю для візуальної перевірки та структури шарів.
 
 Використання:
-    python tools/render_psd.py Main.psd                  # -> Main-preview.png
+    python tools/render_psd.py Main.psd                  # -> preview/Main-preview.png
     python tools/render_psd.py path/to/mockup.psd -o out.png
     python tools/render_psd.py Main.psd --scale 0.5      # менше прев'ю
 
@@ -19,7 +19,7 @@ from pathlib import Path
 def main() -> int:
     ap = argparse.ArgumentParser(description="Render a PSD mockup to PNG preview")
     ap.add_argument("psd", type=Path, help="path to .psd file")
-    ap.add_argument("-o", "--out", type=Path, default=None, help="output PNG (default: <name>-preview.png)")
+    ap.add_argument("-o", "--out", type=Path, default=None, help="output PNG (default: preview/<name>-preview.png)")
     ap.add_argument("--scale", type=float, default=1.0, help="resize factor for the preview (default 1.0)")
     args = ap.parse_args()
 
@@ -33,7 +33,9 @@ def main() -> int:
         print("error: psd-tools is not installed -> pip install psd-tools", file=sys.stderr)
         return 1
 
-    out = args.out or args.psd.with_name(f"{args.psd.stem}-preview.png")
+    # previews go to preview/ subfolder (gitignored) — never clutter the repo root
+    out = args.out or Path("preview") / f"{args.psd.stem}-preview.png"
+    out.parent.mkdir(parents=True, exist_ok=True)
 
     print(f"opening {args.psd} ...")
     psd = PSDImage.open(args.psd)

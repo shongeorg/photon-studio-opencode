@@ -5,7 +5,7 @@
 Кинув новий `.psd` у папку → відрендерив прев'ю → віддав опенкоду → він верстає все сам: розмітку, стилі, SEO, проходить тести.
 
 - **Продакшен:** https://photon-studio-opencode.vercel.app/
-- **Приклад макета:** `Main.psd` (1920×6042), прев'ю: `Main-preview.png`
+- **Приклад макета:** `Main.psd` (1920×6042), прев'ю: `preview/Main-preview.png`
 
 ---
 
@@ -67,7 +67,7 @@ python tools/render_psd.py Landing.psd
 Виведе:
 - розмір полотна і колірний режим;
 - **дерево верхньорівневих шарів = секції макета** (Head, About, Service, …) з bbox-координатами;
-- збереже `Landing-preview.png` — повнокольорове прев'ю для порівняння.
+- збереже `preview/Landing-preview.png` — повнокольорове прев'ю для порівняння.
 
 ### Крок 3 — відкрий у Photon Studio (за бажанням)
 
@@ -81,7 +81,7 @@ python tools/render_psd.py Landing.psd
 У папку кинуто макет Landing.psd. Відрендери його:
 python tools/render_psd.py Landing.psd
 
-Дивись Landing-preview.png і bbox шарів як референс. Переверстати index.html +
+Дивись preview/Landing-preview.png і bbox шарів як референс. Переверстати index.html +
 assets/style.css під цей макет повністю, секція за секцією (усі верхньорівневі
 шари з PSD — це секції сторінки, їх порядок зверху вниз = порядок секцій).
 
@@ -169,7 +169,7 @@ index.html              розмітка (усі секції макета)
 assets/style.css        стилі (CSS-змінні з палітри макета)
 robots.txt, sitemap.xml SEO
 Main.psd                вихідний макет
-Main-preview.png        рендер макета (python tools/render_psd.py)
+preview/Main-preview.png  рендер макета (python tools/render_psd.py)
 tools/render_psd.py     рендер PSD → PNG + дерево шарів
 tests/                  Playwright-тести (назви українською)
 playwright.config.ts    5 браузерів, baseURL http://localhost:3333

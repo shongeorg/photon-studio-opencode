@@ -2,7 +2,7 @@
 
 ## What this repo is
 
-A single-page landing site (**`index.html` + `assets/style.css`**, no framework, no JS) built from the design mockup **`Main.psd`** (1920×6042, render: `Main-preview.png`), plus a Playwright audit suite (performance / SEO / a11y / screenshots / Lighthouse) that tests it at **http://localhost:3333** (live-server).
+A single-page landing site (**`index.html` + `assets/style.css`**, no framework, no JS) built from the design mockup **`Main.psd`** (1920×6042, render: `preview/Main-preview.png`), plus a Playwright audit suite (performance / SEO / a11y / screenshots / Lighthouse) that tests it at **http://localhost:3333** (live-server).
 
 Palette: green `#4caf50` / `#8bc34a`, hero `#000`, tiles `#414141`, CTA `#282828`, footer `#262626`, light sections `#fafafa` / `#f7f7f7`. Content language: English; test titles: Ukrainian.
 
