@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photon Studio — Web Design &amp; Development Studio</title>
+  <meta name="description" content="Photon Studio is a full-service digital studio crafting stunning, fast and accessible websites: design, development, branding and online management for growing businesses.">
+  <link rel="canonical" href="https://photon-studio-opencode.vercel.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Photon Studio">
+  <meta property="og:title" content="Photon Studio — Web Design &amp; Development Studio">
+  <meta property="og:description" content="Everything you need to create a stunning website: strategy, design, development and support from one studio.">
+  <meta property="og:url" content="https://photon-studio-opencode.vercel.app/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Photon Studio — Web Design &amp; Development Studio">
+  <meta name="twitter:description" content="Everything you need to create a stunning website: strategy, design, development and support from one studio.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23000'/%3E%3Cpath d='M6 8 L16 25 L26 8' fill='none' stroke='%234caf50' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Photon Studio",
+    "url": "https://photon-studio-opencode.vercel.app/",
+    "description": "Full-service web design and development studio.",
+    "email": "info@photonstudio.dev",
+    "telephone": "+1-232-333-4566"
+  }
+  </script>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <!-- Top bar -->
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <ul class="topbar-contacts">
+          <li>
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+            Address: Main Street, Jeddah
+          </li>
+          <li>
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.6 15.6 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+            Phone: +1 232 333 45 66
+          </li>
+          <li>
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg>
+            Email: info@photonstudio.dev
+          </li>
+        </ul>
+        <ul class="topbar-socials">
+          <li><a href="https://www.facebook.com/" aria-label="Photon Studio on Facebook"><span aria-hidden="true">f</span></a></li>
+          <li><a href="https://twitter.com/" aria-label="Photon Studio on Twitter"><span aria-hidden="true">t</span></a></li>
+          <li><a href="https://www.instagram.com/" aria-label="Photon Studio on Instagram"><span aria-hidden="true">in</span></a></li>
+          <li><a href="https://www.linkedin.com/" aria-label="Photon Studio on LinkedIn"><span aria-hidden="true">li</span></a></li>
+          <li><a href="https://www.pinterest.com/" aria-label="Photon Studio on Pinterest"><span aria-hidden="true">p</span></a></li>
+          <li><a href="https://www.youtube.com/" aria-label="Photon Studio on YouTube"><span aria-hidden="true">y</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main navigation -->
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="container nav-inner">
+        <a class="logo" href="/index.html">
+          <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 6 L16 27 L28 6" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="logo-text">photon<em>studio</em></span>
+        </a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-burger"><span aria-hidden="true">&#9776;</span><span class="visually-hidden">Toggle navigation menu</span></label>
+        <ul class="menu">
+          <li class="active"><a href="/index.html">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="nav-search" type="button" aria-label="Search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><line x1="15.5" y1="15.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero / slider -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <p class="hero-lead">Everything you need to have in order to create a</p>
+        <h1>Stunning Website</h1>
+        <p class="hero-sub">Photon Studio is a front-end digital studio (and more to come!) packed with strategy, design and engineering that make countless variations possible — easily and without any compromise on quality.</p>
+        <div class="hero-actions">
+          <a class="btn btn-green" href="#portfolio">Discover Now</a>
+          <a class="btn btn-white" href="#contact">Contact Us</a>
+        </div>
+        <div class="hero-dots" aria-hidden="true">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="container about-inner">
+        <div class="about-visual" aria-hidden="true">
+          <span class="frame-back"></span>
+          <div class="frame-front"></div>
+        </div>
+        <div class="about-text">
+          <h2>About The <span class="accent">Studio</span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam massa sed enim posuere, ac iaculis urna feugiat. Viverra tellus nec elementum laoreet, quis iaculis orci. Suspendisse sed libero tincidunt, sed lorem sit amet, tincidunt posuere felis. Curabitur posuere ante eget dui posuere, sit amet placerat felis hendrerit.</p>
+          <a class="btn btn-outline" href="#services">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+      <div class="container services-inner">
+        <div class="services-content">
+          <p class="section-label">Our expertise</p>
+          <h2>What We <span class="accent">Do</span></h2>
+          <p class="section-intro">Coordinates for site pos coordinates for site positioning the closest positioned Coordinates for site pos. Suspendisse sed aliquet elementum, the positioned posuere felis.</p>
+          <div class="feature-grid">
+            <div class="feature">
+              <svg class="feature-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4" width="19" height="13" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.8"/><line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="1.8"/><path d="M7 12l3-3 2.5 2.5L17 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div>
+                <h3>Design &amp; Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectet adipiscing elit sed do eiusm tempor.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <svg class="feature-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 13h4l2.5-7 3.5 12 3-9 2 4h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div>
+                <h3>Creative Process</h3>
+                <p>Lorem ipsum dolor sit amet, consectet adipiscing elit sed do eiusm tempor.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <svg class="feature-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 7h6v6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div>
+                <h3>Online Management</h3>
+                <p>Lorem ipsum dolor sit amet, consectet adipiscing elit sed do eiusm tempor.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <svg class="feature-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13l4 4L14 8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 15l2 2 8-10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div>
+                <h3>Friendly Support</h3>
+                <p>Lorem ipsum dolor sit amet, consectet adipiscing elit sed do eiusm tempor.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="services-visual" aria-hidden="true">
+          <div class="poster poster-lg">
+            <div class="art">
+              <strong>Your Artwork Here</strong>
+              <span>provide area at the top with prices and add your logo text.</span>
+            </div>
+          </div>
+          <div class="poster poster-sm">
+            <div class="art">
+              <strong>Your Artwork Here</strong>
+              <span>provide area at the top with prices and add your logo text.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-label">Showcasing projects</p>
+          <h2>Recent <span class="accent">Work</span></h2>
+          <a class="view-more" href="#portfolio">View More</a>
+        </header>
+        <ul class="filters">
+          <li><a class="active" href="#portfolio">All</a></li>
+          <li><a href="#portfolio">Website Design</a></li>
+          <li><a href="#portfolio">Graphic Design</a></li>
+          <li><a href="#portfolio">Branding</a></li>
+          <li><a href="#portfolio">Web Development</a></li>
+          <li><a href="#portfolio">Photography</a></li>
+        </ul>
+        <div class="portfolio-grid" aria-hidden="true">
+          <div class="tile"></div>
+          <div class="tile tile-add"><span class="plus"></span></div>
+          <div class="tile"></div>
+          <div class="tile"></div>
+          <div class="tile"></div>
+          <div class="tile"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core features / tabs -->
+    <section class="features">
+      <div class="container">
+        <div class="tabs">
+          <button class="tab" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 12.5l2.5 2.5L16 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Core Value
+          </button>
+          <button class="tab active" type="button" aria-pressed="true">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="4" y1="12" x2="20" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="4" y1="17" x2="14" y2="17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            Core Features
+          </button>
+          <button class="tab" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.6 5.6l2.1 2.1m8.6 8.6l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            Company History
+          </button>
+        </div>
+        <div class="features-body">
+          <div class="features-text">
+            <h2>Start your Business Today</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dignissim viverra ex sit lagna sodales euismod nim, sit amet tempus ipsum eu est. Proin suscipit sem el ex glavrida adipiscing ex. Hac et sagittis adipiscing ac at proin libero tempus quam, venenatis posuere erat. Duis sit amet eros.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dignissim viverra ex sit lagna sodales euismod nim, sit amet tempus ipsum eu est. Proin suscipit sem el ex glavrida adipiscing ex.</p>
+            <a class="btn btn-green" href="#contact">Get Started</a>
+          </div>
+          <div class="features-video">
+            <button class="play" type="button" aria-label="Play studio overview video">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA banner -->
+    <section class="cta">
+      <div class="container cta-inner">
+        <h2>Have you fall in love with this theme yet?</h2>
+        <a class="btn btn-green btn-pill" href="#contact">Discover what luxury truly means</a>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="team">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-label">Get to know our</p>
+          <h2>Team <span class="accent">Member</span></h2>
+          <span class="head-underline" aria-hidden="true"></span>
+        </header>
+        <div class="team-grid">
+          <article class="member">
+            <div class="photo" aria-hidden="true"></div>
+            <div class="overlay">
+              <h3>James Wilson</h3>
+              <p class="role">Lead Developer</p>
+              <p class="bio">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+            </div>
+            <ul class="member-socials">
+              <li><a href="https://twitter.com/" aria-label="James Wilson on Twitter"><span aria-hidden="true">t</span></a></li>
+              <li><a href="https://www.facebook.com/" aria-label="James Wilson on Facebook"><span aria-hidden="true">f</span></a></li>
+              <li><a href="https://www.linkedin.com/" aria-label="James Wilson on LinkedIn"><span aria-hidden="true">li</span></a></li>
+              <li><a href="https://www.instagram.com/" aria-label="James Wilson on Instagram"><span aria-hidden="true">in</span></a></li>
+            </ul>
+          </article>
+          <article class="member featured">
+            <div class="photo" aria-hidden="true"></div>
+            <div class="overlay">
+              <h3>Cristina Angel</h3>
+              <p class="role">Product manager</p>
+              <p class="bio">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+            </div>
+            <ul class="member-socials">
+              <li><a href="https://twitter.com/" aria-label="Cristina Angel on Twitter"><span aria-hidden="true">t</span></a></li>
+              <li><a href="https://www.facebook.com/" aria-label="Cristina Angel on Facebook"><span aria-hidden="true">f</span></a></li>
+              <li><a href="https://www.linkedin.com/" aria-label="Cristina Angel on LinkedIn"><span aria-hidden="true">li</span></a></li>
+              <li><a href="https://www.instagram.com/" aria-label="Cristina Angel on Instagram"><span aria-hidden="true">in</span></a></li>
+            </ul>
+          </article>
+          <article class="member">
+            <div class="photo" aria-hidden="true"></div>
+            <div class="overlay">
+              <h3>Anna Smith</h3>
+              <p class="role">Art Director</p>
+              <p class="bio">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+            </div>
+            <ul class="member-socials">
+              <li><a href="https://twitter.com/" aria-label="Anna Smith on Twitter"><span aria-hidden="true">t</span></a></li>
+              <li><a href="https://www.facebook.com/" aria-label="Anna Smith on Facebook"><span aria-hidden="true">f</span></a></li>
+              <li><a href="https://www.linkedin.com/" aria-label="Anna Smith on LinkedIn"><span aria-hidden="true">li</span></a></li>
+              <li><a href="https://www.instagram.com/" aria-label="Anna Smith on Instagram"><span aria-hidden="true">in</span></a></li>
+            </ul>
+          </article>
+          <article class="member">
+            <div class="photo" aria-hidden="true"></div>
+            <div class="overlay">
+              <h3>David Brown</h3>
+              <p class="role">Support Engineer</p>
+              <p class="bio">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+            </div>
+            <ul class="member-socials">
+              <li><a href="https://twitter.com/" aria-label="David Brown on Twitter"><span aria-hidden="true">t</span></a></li>
+              <li><a href="https://www.facebook.com/" aria-label="David Brown on Facebook"><span aria-hidden="true">f</span></a></li>
+              <li><a href="https://www.linkedin.com/" aria-label="David Brown on LinkedIn"><span aria-hidden="true">li</span></a></li>
+              <li><a href="https://www.instagram.com/" aria-label="David Brown on Instagram"><span aria-hidden="true">in</span></a></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="blog" id="blog">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-label">From blog</p>
+          <h2>Our <span class="accent">Blog</span></h2>
+          <span class="head-underline" aria-hidden="true"></span>
+        </header>
+        <div class="blog-grid">
+          <article class="post post-featured">
+            <div class="thumb">
+              <time class="date-badge" datetime="2026-05-20"><b>20</b><span>May</span></time>
+            </div>
+            <h3><a href="#blog">Amazing Blog Title Here</a></h3>
+            <p class="meta">By: Photon Studio</p>
+            <p class="excerpt">Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+          </article>
+          <div class="post-list">
+            <article class="post post-mini">
+              <div class="thumb-sm" aria-hidden="true"></div>
+              <div>
+                <h3><a href="#blog">Amazing Mini Blog Title Here</a></h3>
+                <p class="meta">By: Photon Studio</p>
+              </div>
+            </article>
+            <article class="post post-mini">
+              <div class="thumb-sm" aria-hidden="true"></div>
+              <div>
+                <h3><a href="#blog">Your Company Mini Blog Title Here</a></h3>
+                <p class="meta">By: Photon Studio</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners -->
+    <section class="partners" aria-label="Our partners">
+      <div class="container partners-row">
+        <div class="partner p-badge"><span>best<br>handcrafted</span></div>
+        <div class="partner p-vintage"><span>Vintage</span></div>
+        <div class="partner p-pacific"><span>Pacific Coast</span></div>
+        <div class="partner p-popskittle"><span>Popskittle</span></div>
+        <div class="partner p-henderson"><span>Henderson<em>est. 1977</em></span></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a class="logo logo-light" href="/index.html">
+          <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 6 L16 27 L28 6" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="logo-text">photon<em>studio</em></span>
+        </a>
+        <ul class="footer-socials">
+          <li><a href="https://www.facebook.com/" aria-label="Photon Studio on Facebook"><span aria-hidden="true">f</span></a></li>
+          <li><a href="https://twitter.com/" aria-label="Photon Studio on Twitter"><span aria-hidden="true">t</span></a></li>
+          <li><a href="https://www.instagram.com/" aria-label="Photon Studio on Instagram"><span aria-hidden="true">in</span></a></li>
+          <li><a href="https://www.linkedin.com/" aria-label="Photon Studio on LinkedIn"><span aria-hidden="true">li</span></a></li>
+          <li><a href="https://www.pinterest.com/" aria-label="Photon Studio on Pinterest"><span aria-hidden="true">p</span></a></li>
+          <li><a href="https://www.youtube.com/" aria-label="Photon Studio on YouTube"><span aria-hidden="true">y</span></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2 class="footer-title">Contact</h2>
+        <ul class="contact-list">
+          <li>
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+            17 Lake Street, California USA
+          </li>
+          <li>
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.6 15.6 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+            800-232-333-4567
+          </li>
+          <li>
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg>
+            <a href="mailto:info@photonstudio.dev">info@photonstudio.dev</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2 class="footer-title">Latest Tweets</h2>
+        <div class="tweets">
+          <p>
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 5.9c-.7.3-1.5.6-2.3.7a4 4 0 0 0 1.8-2.2c-.8.5-1.7.8-2.6 1a4 4 0 0 0-6.9 3.7A11.5 11.5 0 0 1 3.6 4.8a4 4 0 0 0 1.2 5.4c-.6 0-1.3-.2-1.8-.5a4 4 0 0 0 3.2 4 4 4 0 0 1-1.8.1 4 4 0 0 0 3.7 2.8A8 8 0 0 1 2 18.3a11.4 11.4 0 0 0 6.2 1.8c7.5 0 11.6-6.2 11.6-11.6v-.5c.8-.6 1.5-1.3 2.2-2.1z"/></svg>
+            Neque porro quisquam est qui dolorem ipsum quia dolor sit amet.
+            <a href="https://twitter.com/">https://t.co/guidemoz37</a>
+          </p>
+          <p class="tweet-meta">February 23, 2026</p>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h2 class="footer-title">Newsletter</h2>
+        <p class="newsletter-note">Signup for our monthly newsletter for latest updates about our company.</p>
+        <form class="newsletter" action="#" method="post">
+          <label class="visually-hidden" for="newsletter-email">Email address</label>
+          <input id="newsletter-email" name="email" type="email" placeholder="Email address" required>
+          <button type="submit" aria-label="Subscribe to newsletter">
+            <span aria-hidden="true">&rarr;</span>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy;2026 All Rights Reserved. Design by <span class="accent">Photon Studio</span>.</p>
+    </div>
+
+    <a class="back-to-top" href="#home" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 14l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </footer>
+
+</body>
+</html>

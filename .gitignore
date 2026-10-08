@@ -1,0 +1,6 @@
+.vercel
+node_modules
+test-results
+tests/screenshots.spec.ts-snapshots
+playwright-report
+Main-preview.png
