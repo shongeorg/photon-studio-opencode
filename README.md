@@ -21,13 +21,15 @@
 | **Vercel CLI** | деплой (опційно) | `npm i -g vercel` → `vercel login` |
 | **Photon Studio** (опційно) | безкоштовний Photoshop-альтернатива — відкрити PSD локально з шарами | https://tenzen.studio/photon/ (macOS / Windows / Linux, безкоштовно, офлайн) |
 | **Скіл `modern-web-guidance`** (обов'язково) | гугл-скіл з сучасним HTML/CSS/a11y — без нього агент верстатиме застарілими патернами | `npx skills add GoogleChrome/modern-web-guidance` |
+| **Photon скіли** (обов'язково) | скілли для роботи опенкода з Photon Studio ([photon-hq/skills](https://github.com/photon-hq/skills)) | `npx skills add photon-hq/skills -y --copy` |
 
-Один раз на проєкт:
+Один раз на проєкт (все руками в терміналі):
 
 ```bash
 npm install
 npx playwright install
-npx skills add GoogleChrome/modern-web-guidance -y --copy   # обов'язковий гугл-скіл
+npx skills add GoogleChrome/modern-web-guidance -y --copy   # гугл-скіли (верстка)
+npx skills add photon-hq/skills -y --copy                   # photon-скіли (Photon Studio)
 ```
 
 ---
@@ -105,36 +107,48 @@ chrome-devtools MCP (скріншоти на 1920), потім npx playwright te
 
 ---
 
-## 4. Скіли для opencode
+## 4. Скіли для opencode — встановити руками в терміналі
 
-### Вже стоять у цьому проєкті (треба мати встановленими)
+Скіли **не встановлені автоматично** — перед роботою їх треба поставити в терміналі. Формат [Agent Skills](https://skills.sh/): після встановлення опенкод підхоплює їх сам.
 
-| Скіл | Звідки | Навіщо |
-|---|---|---|
-| `modern-web-guidance` | GoogleChrome/modern-web-guidance | **обов'язковий** для HTML/CSS-завдань: сучасні CSS (container queries, `:has()`, fluid type), a11y, Core Web Vitals |
+### 4.1 Google скіли (обов'язкові для верстки)
 
-Лежать у `.agents/skills/`, хеші у `skills-lock.json`. Встановити / оновити:
+`GoogleChrome/modern-web-guidance` — сучасний HTML/CSS, accessibility, Core Web Vitals, форми, UI-патерни. Без нього агент верстатиме застарілими патернами:
 
 ```bash
 npx skills add GoogleChrome/modern-web-guidance -y --copy
 ```
 
-### Поставити додаткові скіли
+### 4.2 Photon скіли (для роботи з Photon Studio)
 
-Формат [Agent Skills](https://skills.sh/) — опенкод підхоплює їх автоматично:
+[github.com/photon-hq/skills](https://github.com/photon-hq/skills) — скілли, які потрібні опенкоду для роботи з Photon Studio та її SDK. Встанови всі разом:
 
 ```bash
-npx skills add GoogleChrome/modern-web-guidance   # гугл: CSS/HTML/a11y/performance
-npx skills add photon-hq/skills --skill spectrum   # Photon SDK (iMessage/WhatsApp/terminal)
-npx skills add photon-hq/skills --skill photon-cli # photon CLI (dashboard/лінії/білінг)
-npx skills find <запит>                            # пошук скілів
-npx skills list                                    # що встановлено
-npx skills update                                  # оновити всі
+npx skills add photon-hq/skills -y --copy
 ```
 
-Скіли `photon-hq/skills` (imessage, spectrum, photon-cli, chat-adapter-imessage, buildspace-ci-cd) — це для роботи з Photon SDK (photon.codes): месенджери, CLI, CI/CD. **Не плутати з Photon Studio** (tenzen.studio) — це Photoshop-альтернатива, у неї свої вбудовані skills/CLI/MCP (Settings → integrations у застосунку).
+Один до одного — кожен скіл окремою командою:
 
-### Корисні скіли OpenCode
+```bash
+npx skills add photon-hq/skills --skill imessage
+npx skills add photon-hq/skills --skill chat-adapter-imessage
+npx skills add photon-hq/skills --skill buildspace-ci-cd
+npx skills add photon-hq/skills --skill spectrum
+npx skills add photon-hq/skills --skill photon-cli
+```
+
+Що дає кожен:
+
+### 4.3 Перевірка та оновлення
+
+```bash
+npx skills list          # що встановлено
+npx skills find <запит>  # пошук скілів
+npx skills update        # оновити всі до останньої версії
+npx skills remove        # видалити зайве
+```
+
+### 4.4 Вбудовані скіли OpenCode
 
 - `find-skills` — знайти і встановити скіл під задачу;
 - `opencode` — питання по самому OpenCode (agent, tools, MCP, themes);
